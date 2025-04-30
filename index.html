@@ -141,7 +141,7 @@
               class="indicator-icon"
               aria-hidden="true"
             />
-            <span class="number">30%</span>
+            <span class="number">20%</span>
             <span class="label" id="back-indicator">Impact back-end</span>
           </div>
           <div class="indicator">
@@ -188,6 +188,111 @@
         </div>
       </section>
 
+      <section class="metrics" aria-labelledby="metrics-title">
+        <h2 id="metrics-title">Mesures quantitatives</h2>
+        <div class="metrics-container">
+          <div class="metric-card">
+            <h3 id="access-score">
+              <img
+                src="images/accessible.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              Score d'accessibilité
+            </h3>
+            <p>
+              Score moyen sur Lighthouse en raison des problèmes d'accessibilité
+              identifiés.
+            </p>
+          </div>
+          <div class="metric-card">
+            <h3 id="eco-score">
+              <img
+                src="images/leaf.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              EcoIndex
+            </h3>
+            <p>
+              Performance écologique probablement moyenne en raison du poids de
+              la page et des nombreuses ressources.
+            </p>
+          </div>
+          <div class="metric-card">
+            <h3 id="impact-repartition">
+              <img
+                src="images/chart.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              Répartition des impacts
+            </h3>
+            <ul>
+              <li>
+                <strong>Front-end:</strong> 70% (nombreuses images, CSS
+                multiples)
+              </li>
+              <li>
+                <strong>Back-end:</strong> 20% (CMS Drupal, traitement des
+                données)
+              </li>
+              <li><strong>Infrastructure:</strong> 10% (hébergement)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="conclusion-wrapper">
+          <div class="pre conclusion">
+            <p>Vous pourrez retrouver l'analyse complète sur :</p>
+            <ul>
+              <li>
+                <a
+                  href="https://wave.webaim.org/report#/https://handicap.gouv.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Analyse Wave du site handicap.gouv.fr (nouvelle fenêtre)"
+                  >Wave<span class="visually-hidden">
+                    (s'ouvre dans une nouvelle fenêtre)</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://lighthouse-metrics.com/lighthouse/checks/69e1fe50-e859-4061-9bb8-6bab44c58bea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Rapport Lighthouse du site handicap.gouv.fr (nouvelle fenêtre)"
+                  >Lighthouse<span class="visually-hidden">
+                    (s'ouvre dans une nouvelle fenêtre)</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://my.tanaguru.com/#/audits/8428/pages/5570"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Audit Tanaguru du site handicap.gouv.fr (nouvelle fenêtre)"
+                  >Tanaguru<span class="visually-hidden">
+                    (s'ouvre dans une nouvelle fenêtre)</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="conclusion">
+            <p>
+              Cette analyse met en évidence qu'un service public aussi essentiel
+              que handicap.gouv.fr gagnerait à améliorer ses pratiques
+              d'écoconception et d'accessibilité pour être pleinement aligné
+              avec sa mission d'inclusion.
+            </p>
+          </div>
+        </div>
+      </section>
       <section class="analysis" aria-labelledby="analysis-title">
         <h2 id="analysis-title">Points forts et points faibles</h2>
         <div class="columns-container">
@@ -364,112 +469,6 @@
                 Optimiser la configuration serveur pour les temps de réponse
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="metrics" aria-labelledby="metrics-title">
-        <h2 id="metrics-title">Mesures quantitatives</h2>
-        <div class="metrics-container">
-          <div class="metric-card">
-            <h3 id="access-score">
-              <img
-                src="images/accessible.svg"
-                alt=""
-                class="metric-icon"
-                aria-hidden="true"
-              />
-              Score d'accessibilité
-            </h3>
-            <p>
-              Score moyen sur Lighthouse en raison des problèmes d'accessibilité
-              identifiés.
-            </p>
-          </div>
-          <div class="metric-card">
-            <h3 id="eco-score">
-              <img
-                src="images/leaf.svg"
-                alt=""
-                class="metric-icon"
-                aria-hidden="true"
-              />
-              EcoIndex
-            </h3>
-            <p>
-              Performance écologique probablement moyenne en raison du poids de
-              la page et des nombreuses ressources.
-            </p>
-          </div>
-          <div class="metric-card">
-            <h3 id="impact-repartition">
-              <img
-                src="images/chart.svg"
-                alt=""
-                class="metric-icon"
-                aria-hidden="true"
-              />
-              Répartition des impacts
-            </h3>
-            <ul>
-              <li>
-                <strong>Front-end:</strong> 70% (nombreuses images, CSS
-                multiples)
-              </li>
-              <li>
-                <strong>Back-end:</strong> 20% (CMS Drupal, traitement des
-                données)
-              </li>
-              <li><strong>Infrastructure:</strong> 10% (hébergement)</li>
-            </ul>
-          </div>
-        </div>
-        <div class="conclusion-wrapper">
-          <div class="pre conclusion">
-            <p>Vous pourrez retrouver l'analyse complète sur :</p>
-            <ul>
-              <li>
-                <a
-                  href="https://wave.webaim.org/report#/https://handicap.gouv.fr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Analyse Wave du site handicap.gouv.fr (nouvelle fenêtre)"
-                  >Wave<span class="visually-hidden">
-                    (s'ouvre dans une nouvelle fenêtre)</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://lighthouse-metrics.com/lighthouse/checks/69e1fe50-e859-4061-9bb8-6bab44c58bea"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Rapport Lighthouse du site handicap.gouv.fr (nouvelle fenêtre)"
-                  >Lighthouse<span class="visually-hidden">
-                    (s'ouvre dans une nouvelle fenêtre)</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://my.tanaguru.com/#/audits/8428/pages/5570"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Audit Tanaguru du site handicap.gouv.fr (nouvelle fenêtre)"
-                  >Tanaguru<span class="visually-hidden">
-                    (s'ouvre dans une nouvelle fenêtre)</span
-                  ></a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="conclusion">
-            <p>
-              Cette analyse met en évidence qu'un service public aussi essentiel
-              que handicap.gouv.fr gagnerait à améliorer ses pratiques
-              d'écoconception et d'accessibilité pour être pleinement aligné
-              avec sa mission d'inclusion.
-            </p>
           </div>
         </div>
       </section>
