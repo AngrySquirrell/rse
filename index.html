@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analyse handicap.gouv.fr - Conception Responsable</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Analyse détaillée des pratiques de conception responsable pour le site handicap.gouv.fr"
+    />
+  </head>
+  <body>
+    <!-- Liens d'évitement -->
+    <nav class="skip-links" aria-label="Liens d'évitement">
+      <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+      <a href="#footer" class="skip-link">Aller au pied de page</a>
+    </nav>
+
+    <header role="banner">
+      <div class="navbar">
+        <div class="logo-title">
+          <div class="logo">
+            <img
+              src="images/leaf.svg"
+              alt="Logo représentant une feuille verte symbolisant l'éco-conception"
+              id="logo-pourri"
+            />
+          </div>
+          <h1>Hy<span class="highlight">creo</span></h1>
+        </div>
+
+        <div class="nav-accessibility-wrapper">
+          <nav class="main-nav" aria-label="Navigation principale">
+            <ul>
+              <li><a href="index.html" aria-current="page">Accueil</a></li>
+              <li><a href="accessibility.html">Accessibilité</a></li>
+            </ul>
+          </nav>
+
+          <div
+            class="accessibility-controls"
+            aria-label="Outils d'accessibilité"
+          >
+            <button
+              id="contrast-toggle"
+              class="a11y-button"
+              aria-label="Basculer en mode contraste élevé"
+              title="Contraste élevé"
+            >
+              <span class="icon">Aa</span>
+            </button>
+            <button
+              id="font-increase"
+              class="a11y-button"
+              aria-label="Augmenter la taille du texte"
+              title="Augmenter le texte"
+            >
+              <span class="icon">A+</span>
+            </button>
+            <button
+              id="font-decrease"
+              class="a11y-button"
+              aria-label="Diminuer la taille du texte"
+              title="Diminuer le texte"
+            >
+              <span class="icon">A-</span>
+            </button>
+            <button
+              id="animations-toggle"
+              class="a11y-button"
+              aria-label="Désactiver les animations"
+              title="Désactiver les animations"
+            >
+              <span class="icon">⏸️</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="team-members" aria-label="Équipe du projet">
+          <p>Louis Réville</p>
+          <p>Sebastien Branly</p>
+          <p>Guillaume Maugin</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="main-title">
+        <h2 id="main-title">
+          Analyse du site <span class="highlight">handicap.gouv.fr</span>
+        </h2>
+        <p>
+          Évaluation détaillée des pratiques de conception responsable pour le
+          site officiel du Ministère du Travail, de la Santé, des Solidarités et
+          des Familles.
+        </p>
+        <div class="eco-indicators" role="group" aria-label="Indicateurs clés">
+          <div class="indicator">
+            <img
+              src="images/target.svg"
+              alt=""
+              class="indicator-icon"
+              aria-hidden="true"
+            />
+            <span class="number">3</span>
+            <span class="label" id="odd-indicator">ODD ciblés</span>
+          </div>
+          <div class="indicator">
+            <img
+              src="images/browser.svg"
+              alt=""
+              class="indicator-icon"
+              aria-hidden="true"
+            />
+            <span class="number">70%</span>
+            <span class="label" id="front-indicator">Impact front-end</span>
+          </div>
+          <div class="indicator">
+            <img
+              src="images/server.svg"
+              alt=""
+              class="indicator-icon"
+              aria-hidden="true"
+            />
+            <span class="number">20%</span>
+            <span class="label" id="back-indicator">Impact back-end</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="presentation" aria-labelledby="presentation-title">
+        <h2 id="presentation-title">Présentation du service</h2>
+        <div class="service-info">
+          <div class="info-card">
+            <h3 id="unite-title">Unité fonctionnelle</h3>
+            <p>
+              Informer et accompagner les citoyens sur les politiques, démarches
+              et aides relatives au handicap en France
+            </p>
+          </div>
+          <div class="info-card">
+            <h3 id="besoins-title">Besoins ciblés</h3>
+            <ul aria-labelledby="besoins-title">
+              <li>
+                Accès à l'information officielle sur les droits et démarches
+              </li>
+              <li>Orientation vers les services adaptés</li>
+              <li>Communication des actualités et politiques publiques</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3 id="odd-title">Objectifs de Développement Durable</h3>
+            <ul aria-labelledby="odd-title">
+              <li>ODD 3 : Bonne santé et bien-être</li>
+              <li>ODD 10 : Réduction des inégalités</li>
+              <li>ODD 16 : Institutions efficaces</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="analysis" aria-labelledby="analysis-title">
+        <h2 id="analysis-title">Points forts et points faibles</h2>
+        <div class="columns-container">
+          <div class="column">
+            <h3 id="points-forts">Points forts</h3>
+            <div class="category">
+              <h4 id="eco-forts" class="eco">
+                <img
+                  src="images/leaf.svg"
+                  alt=""
+                  class="category-icon eco-icon"
+                  aria-hidden="true"
+                />
+                Écoconception
+              </h4>
+              <ul aria-labelledby="eco-forts">
+                <li>Utilisation du format WebP pour les images</li>
+                <li>Implémentation du lazy loading sur les images</li>
+                <li>Utilisation du Design System de l'État français (DSFR)</li>
+              </ul>
+            </div>
+            <div class="category">
+              <h4 id="access-forts" class="access">
+                <img
+                  src="images/accessible.svg"
+                  alt=""
+                  class="category-icon access-icon"
+                  aria-hidden="true"
+                />
+                Accessibilité
+              </h4>
+              <ul aria-labelledby="access-forts">
+                <li>Structure avec liens d'évitement (skiplinks)</li>
+                <li>Utilisation de la sémantique HTML5</li>
+                <li>Implémentation d'attributs ARIA</li>
+                <li>Langue du document correctement spécifiée</li>
+              </ul>
+            </div>
+            <div class="category">
+              <h4 id="qualite-forts" class="perf">
+                <img
+                  src="images/bolt.svg"
+                  alt=""
+                  class="category-icon perf-icon"
+                  aria-hidden="true"
+                />
+                Qualité
+              </h4>
+              <ul aria-labelledby="qualite-forts">
+                <li>Structure hiérarchique des titres cohérente</li>
+                <li>Navigation claire et organisée</li>
+                <li>Responsive design pour différents appareils</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <h3 id="points-faibles">Points faibles</h3>
+            <div class="category">
+              <h4 id="eco-faibles" class="eco">
+                <img
+                  src="images/leaf-off.svg"
+                  alt=""
+                  class="category-icon eco-icon"
+                  aria-hidden="true"
+                />
+                Écoconception
+              </h4>
+              <ul aria-labelledby="eco-faibles">
+                <li>Nombreux fichiers CSS chargés séparément (4 fichiers)</li>
+                <li>Scripts JavaScript multiples</li>
+                <li>Page d'accueil lourde avec nombreux éléments et images</li>
+              </ul>
+            </div>
+            <div class="category">
+              <h4 id="access-faibles" class="access">
+                <img
+                  src="images/accessible-off.svg"
+                  alt=""
+                  class="category-icon access-icon"
+                  aria-hidden="true"
+                />
+                Accessibilité
+              </h4>
+              <ul aria-labelledby="access-faibles">
+                <li>
+                  Nombreuses images sans texte alternatif ou avec alt vide
+                </li>
+                <li>Attributs ARIA redondants ou mal utilisés</li>
+                <li>Liens avec titres redondants</li>
+              </ul>
+            </div>
+            <div class="category">
+              <h4 id="perf-faibles" class="perf">
+                <img
+                  src="images/bolt-off.svg"
+                  alt=""
+                  class="category-icon perf-icon"
+                  aria-hidden="true"
+                />
+                Performance
+              </h4>
+              <ul aria-labelledby="perf-faibles">
+                <li>Large objet JSON inline dans le code</li>
+                <li>Multiples scripts externes</li>
+                <li>
+                  Services tiers de tracking et analytics (Eulerian Analytics)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommendations" aria-labelledby="recomm-title">
+        <h2 id="recomm-title">Recommandations d'amélioration</h2>
+        <div class="recommendations-container">
+          <div class="recommendation-card">
+            <h3 id="front-title">
+              <img
+                src="images/browser.svg"
+                alt=""
+                class="recommendation-icon"
+                aria-hidden="true"
+              />
+              Front-end (70%)
+            </h3>
+            <ul aria-labelledby="front-title">
+              <li>
+                Consolider les fichiers CSS et JavaScript pour réduire les
+                requêtes HTTP
+              </li>
+              <li>
+                Ajouter des attributs alt significatifs à toutes les images
+              </li>
+              <li>
+                Corriger les redondances ARIA et suivre les bonnes pratiques
+                d'accessibilité
+              </li>
+              <li>Remplacer certaines images décoratives par des SVG ou CSS</li>
+            </ul>
+          </div>
+          <div class="recommendation-card">
+            <h3 id="back-title">
+              <img
+                src="images/server.svg"
+                alt=""
+                class="recommendation-icon"
+                aria-hidden="true"
+              />
+              Back-end (20%)
+            </h3>
+            <ul aria-labelledby="back-title">
+              <li>Mettre en place une stratégie de mise en cache efficace</li>
+              <li>Implémenter une compression serveur optimisée</li>
+              <li>Minimiser l'usage des scripts de suivi et d'analytics</li>
+            </ul>
+          </div>
+          <div class="recommendation-card">
+            <h3 id="infra-title">
+              <img
+                src="images/cloud.svg"
+                alt=""
+                class="recommendation-icon"
+                aria-hidden="true"
+              />
+              Infrastructure (10%)
+            </h3>
+            <ul aria-labelledby="infra-title">
+              <li>
+                Évaluer l'hébergement actuel et privilégier un hébergeur avec un
+                bon bilan carbone
+              </li>
+              <li>
+                Optimiser la configuration serveur pour les temps de réponse
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-labelledby="metrics-title">
+        <h2 id="metrics-title">Mesures quantitatives</h2>
+        <div class="metrics-container">
+          <div class="metric-card">
+            <h3 id="access-score">
+              <img
+                src="images/accessible.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              Score d'accessibilité
+            </h3>
+            <p>
+              Score moyen sur Lighthouse en raison des problèmes d'accessibilité
+              identifiés.
+            </p>
+          </div>
+          <div class="metric-card">
+            <h3 id="eco-score">
+              <img
+                src="images/leaf.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              EcoIndex
+            </h3>
+            <p>
+              Performance écologique probablement moyenne en raison du poids de
+              la page et des nombreuses ressources.
+            </p>
+          </div>
+          <div class="metric-card">
+            <h3 id="impact-repartition">
+              <img
+                src="images/chart.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              Répartition des impacts
+            </h3>
+            <ul>
+              <li>
+                <strong>Front-end:</strong> 70% (nombreuses images, CSS
+                multiples)
+              </li>
+              <li>
+                <strong>Back-end:</strong> 20% (CMS Drupal, traitement des
+                données)
+              </li>
+              <li><strong>Infrastructure:</strong> 10% (hébergement)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="conclusion-wrapper">
+          <div class="pre conclusion">
+            <p>Vous pourrez retrouver l'analyse complète sur :</p>
+            <ul>
+              <li>
+                <a
+                  href="https://wave.webaim.org/report#/https://handicap.gouv.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Analyse Wave du site handicap.gouv.fr (nouvelle fenêtre)"
+                  >Wave<span class="visually-hidden">
+                    (s'ouvre dans une nouvelle fenêtre)</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://lighthouse-metrics.com/lighthouse/checks/69e1fe50-e859-4061-9bb8-6bab44c58bea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Rapport Lighthouse du site handicap.gouv.fr (nouvelle fenêtre)"
+                  >Lighthouse<span class="visually-hidden">
+                    (s'ouvre dans une nouvelle fenêtre)</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://my.tanaguru.com/#/audits/8428/pages/5570"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Audit Tanaguru du site handicap.gouv.fr (nouvelle fenêtre)"
+                  >Tanaguru<span class="visually-hidden">
+                    (s'ouvre dans une nouvelle fenêtre)</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="conclusion">
+            <p>
+              Cette analyse met en évidence qu'un service public aussi essentiel
+              que handicap.gouv.fr gagnerait à améliorer ses pratiques
+              d'écoconception et d'accessibilité pour être pleinement aligné
+              avec sa mission d'inclusion.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      <p>
+        &copy; 2025 - Analyse de Hycreo |
+        <a href="index.html" aria-current="page">Accueil</a> |
+        <a href="accessibility.html">Accessibilité</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

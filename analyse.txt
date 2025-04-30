@@ -1,0 +1,71 @@
+Analyse du site handicap.gouv.fr en matière de conception responsable
+1. Présentation du service et de son utilité
+Service analysé : Site web handicap.gouv.fr du Ministère du Travail, de la Santé, des Solidarités et des Familles
+
+Unité fonctionnelle : Informer et accompagner les citoyens sur les politiques, démarches et aides relatives au handicap en France
+
+Besoins auxquels répond le service :
+
+Accès à l'information officielle sur les droits et démarches
+Orientation vers les services adaptés
+Communication des actualités et politiques publiques
+Lien avec les ODD :
+
+ODD 3 : Bonne santé et bien-être
+ODD 10 : Réduction des inégalités
+ODD 16 : Institutions efficaces
+2. Points forts et points faibles en conception responsable
+Points forts
+Écoconception :
+
+Utilisation du format WebP pour les images
+Implémentation du lazy loading (loading="lazy") sur les images
+Utilisation du Design System de l'État français (DSFR)
+Accessibilité :
+
+Structure avec liens d'évitement (skiplinks)
+Utilisation de la sémantique HTML5 (<header>, <main>, <footer>)
+Implémentation d'attributs ARIA
+Langue du document correctement spécifiée (lang="fr")
+Qualité :
+
+Structure hiérarchique des titres cohérente
+Navigation claire et organisée
+Responsive design pour différents appareils
+Points faibles
+Écoconception :
+
+Nombreux fichiers CSS chargés séparément (4 fichiers CSS identifiés)
+Scripts JavaScript multiples
+Page d'accueil lourde avec nombreux éléments et images
+Accessibilité :
+
+Nombreuses images sans texte alternatif ou avec alt vide
+Attributs ARIA redondants ou mal utilisés
+Liens avec titres redondants (indiqués par "Redundant title text")
+Performance :
+
+Large objet JSON inline dans le code
+Multiples scripts externes
+Services tiers de tracking et analytics (Eulerian Analytics)
+3. Recommandations d'amélioration
+Front-end
+Consolider les fichiers CSS et JavaScript pour réduire les requêtes HTTP
+Ajouter des attributs alt significatifs à toutes les images
+Corriger les redondances ARIA et suivre les bonnes pratiques d'accessibilité
+Remplacer certaines images décoratives par des SVG ou CSS
+Back-end
+Mettre en place une stratégie de mise en cache efficace
+Implémenter une compression serveur optimisée
+Minimiser l'usage des scripts de suivi et d'analytics
+Infrastructure
+Évaluer l'hébergement actuel et privilégier un hébergeur avec un bon bilan carbone
+Optimiser la configuration serveur pour les temps de réponse
+4. Mesures quantitatives (estimations)
+Score d'accessibilité : Le site présenterait probablement un score moyen sur Lighthouse en raison des problèmes d'accessibilité identifiés
+EcoIndex : Performance écologique probablement moyenne en raison du poids de la page et des nombreuses ressources
+Répartition des impacts :
+Front-end : 70% (nombreuses images, CSS multiples)
+Back-end : 20% (CMS Drupal, traitement des données)
+Infrastructure : 10% (hébergement)
+Cette analyse met en évidence qu'un service public aussi essentiel que handicap.gouv.fr gagnerait à améliorer ses pratiques d'écoconception et d'accessibilité pour être pleinement aligné avec sa mission d'inclusion.

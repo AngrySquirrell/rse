@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibilité - Conception Responsable</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Informations sur les fonctionnalités d'accessibilité du site de Conception Responsable"
+    />
+  </head>
+  <body>
+    <!-- Liens d'évitement -->
+    <nav class="skip-links" aria-label="Liens d'évitement">
+      <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+      <a href="#footer" class="skip-link">Aller au pied de page</a>
+    </nav>
+
+    <header role="banner">
+      <div class="navbar">
+        <div class="logo-title">
+          <div class="logo">
+            <img
+              src="images/leaf.svg"
+              alt="Logo représentant une feuille verte symbolisant l'éco-conception"
+              id="logo-pourri"
+            />
+          </div>
+          <h1>Hy<span class="highlight">creo</span></h1>
+        </div>
+
+        <div class="nav-accessibility-wrapper">
+          <nav class="main-nav" aria-label="Navigation principale">
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li>
+                <a href="accessibility.html" aria-current="page"
+                  >Accessibilité</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="accessibility-controls"
+            aria-label="Outils d'accessibilité"
+          >
+            <button
+              id="contrast-toggle"
+              class="a11y-button"
+              aria-label="Basculer en mode contraste élevé"
+              title="Contraste élevé"
+            >
+              <span class="icon">Aa</span>
+            </button>
+            <button
+              id="font-increase"
+              class="a11y-button"
+              aria-label="Augmenter la taille du texte"
+              title="Augmenter le texte"
+            >
+              <span class="icon">A+</span>
+            </button>
+            <button
+              id="font-decrease"
+              class="a11y-button"
+              aria-label="Diminuer la taille du texte"
+              title="Diminuer le texte"
+            >
+              <span class="icon">A-</span>
+            </button>
+            <button
+              id="animations-toggle"
+              class="a11y-button"
+              aria-label="Désactiver les animations"
+              title="Désactiver les animations"
+            >
+              <span class="icon">⏸️</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="team-members" aria-label="Équipe du projet">
+          <p>Louis Réville</p>
+          <p>Sebastien Branly</p>
+          <p>Guillaume Maugin</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="main-title">
+        <h2 id="main-title">Accessibilité du site</h2>
+        <p>
+          Notre engagement pour un web accessible à tous et les fonctionnalités
+          d'accessibilité mises en place sur ce site.
+        </p>
+      </section>
+
+      <section class="accessibility-info" aria-labelledby="engagement-title">
+        <h2 id="engagement-title">Notre engagement</h2>
+        <div class="info-card">
+          <p>
+            Nous nous engageons à rendre notre site accessible à tous les
+            utilisateurs, quelles que soient leurs capacités ou leur situation.
+            Cette démarche s'inscrit dans notre vision d'une conception
+            numérique responsable qui allie sobriété et accessibilité.
+          </p>
+          <p>
+            Notre objectif est de respecter les critères du RGAA (Référentiel
+            Général d'Amélioration de l'Accessibilité) et les recommandations
+            WCAG 2.1 niveau AA.
+          </p>
+        </div>
+      </section>
+
+      <section class="analysis" aria-labelledby="features-title">
+        <h2 id="features-title">Fonctionnalités d'accessibilité</h2>
+        <div class="columns-container">
+          <div class="column">
+            <div class="category">
+              <h3 id="navigation-title">
+                <img
+                  src="images/navigation.svg"
+                  alt=""
+                  class="category-icon access-icon"
+                  aria-hidden="true"
+                />
+                Navigation
+              </h3>
+              <ul aria-labelledby="navigation-title">
+                <li>
+                  <strong>Liens d'évitement :</strong> Des liens permettent aux
+                  utilisateurs de clavier et de technologies d'assistance de
+                  sauter directement au contenu principal ou au pied de page.
+                </li>
+                <li>
+                  <strong>Structure hiérarchique :</strong> Organisation logique
+                  des titres (h1, h2, h3...) pour faciliter la navigation.
+                </li>
+                <li>
+                  <strong>Navigation au clavier :</strong> Toutes les
+                  fonctionnalités sont accessibles au clavier avec un focus
+                  visible.
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <h3 id="visual-title">
+                <img
+                  src="images/visual.svg"
+                  alt=""
+                  class="category-icon access-icon"
+                  aria-hidden="true"
+                />
+                Aspects visuels
+              </h3>
+              <ul aria-labelledby="visual-title">
+                <li>
+                  <strong>Contraste :</strong> Nous respectons des ratios de
+                  contraste d'au moins 4.5:1 pour le texte standard et 3:1 pour
+                  les grands textes.
+                </li>
+                <li>
+                  <strong>Focus visible :</strong> Indication claire de
+                  l'élément qui a le focus lors de la navigation au clavier.
+                </li>
+                <li>
+                  <strong>Texte redimensionnable :</strong> Le site reste
+                  fonctionnel lorsque le texte est agrandi jusqu'à 200%.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="category">
+              <h3 id="content-title">
+                <img
+                  src="images/content.svg"
+                  alt=""
+                  class="category-icon access-icon"
+                  aria-hidden="true"
+                />
+                Contenu
+              </h3>
+              <ul aria-labelledby="content-title">
+                <li>
+                  <strong>Textes alternatifs :</strong> Toutes les images ont
+                  des descriptions textuelles alternatives.
+                </li>
+                <li>
+                  <strong>Structure sémantique :</strong> Utilisation des
+                  balises HTML5 sémantiques pour définir clairement les zones du
+                  site.
+                </li>
+                <li>
+                  <strong>Attributs ARIA :</strong> Implémentation des rôles et
+                  attributs ARIA pour améliorer la compatibilité avec les
+                  technologies d'assistance.
+                </li>
+              </ul>
+            </div>
+            <div class="category">
+              <h3 id="preferences-title">
+                <img
+                  src="images/settings.svg"
+                  alt=""
+                  class="category-icon access-icon"
+                  aria-hidden="true"
+                />
+                Respect des préférences
+              </h3>
+              <ul aria-labelledby="preferences-title">
+                <li>
+                  <strong>Réduction des animations :</strong> Respect de la
+                  préférence utilisateur "prefers-reduced-motion".
+                </li>
+                <li>
+                  <strong>Mise en page adaptative :</strong> Conception
+                  responsive qui s'adapte à différents appareils et tailles
+                  d'écran.
+                </li>
+                <li>
+                  <strong>Indication des liens externes :</strong> Les liens qui
+                  s'ouvrent dans une nouvelle fenêtre sont clairement
+                  identifiés.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommendations" aria-labelledby="shortcuts-title">
+        <h2 id="shortcuts-title">Raccourcis clavier</h2>
+        <div class="recommendations-container">
+          <div class="recommendation-card">
+            <h3>
+              <img
+                src="images/keyboard.svg"
+                alt=""
+                class="recommendation-icon"
+                aria-hidden="true"
+              />
+              Navigation générale
+            </h3>
+            <ul>
+              <li>
+                <strong>Tab :</strong> Naviguer entre les éléments interactifs
+              </li>
+              <li><strong>Shift + Tab :</strong> Naviguer en sens inverse</li>
+              <li><strong>Entrée :</strong> Activer un lien ou un bouton</li>
+              <li>
+                <strong>Espace :</strong> Activer un bouton ou cocher/décocher
+                une case
+              </li>
+            </ul>
+          </div>
+          <div class="recommendation-card">
+            <h3>
+              <img
+                src="images/skip.svg"
+                alt=""
+                class="recommendation-icon"
+                aria-hidden="true"
+              />
+              Liens d'évitement
+            </h3>
+            <ul>
+              <li>
+                Appuyez sur <strong>Tab</strong> dès l'arrivée sur la page pour
+                faire apparaître les liens d'évitement
+              </li>
+              <li>
+                Utilisez <strong>Entrée</strong> pour activer le lien
+                d'évitement de votre choix
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-labelledby="help-title">
+        <h2 id="help-title">Aide et contact</h2>
+        <div class="metrics-container">
+          <div class="metric-card">
+            <h3>
+              <img
+                src="images/contact.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              Signaler un problème
+            </h3>
+            <p>
+              Si vous rencontrez des difficultés d'accessibilité sur notre site,
+              n'hésitez pas à nous contacter pour nous le signaler :
+            </p>
+            <p>
+              <a href="mailto:accessibilite@hycreo.fr"
+                >accessibilite@hycreo.fr</a
+              >
+            </p>
+          </div>
+          <div class="metric-card">
+            <h3>
+              <img
+                src="images/tech.svg"
+                alt=""
+                class="metric-icon"
+                aria-hidden="true"
+              />
+              Technologies d'assistance testées
+            </h3>
+            <ul>
+              <li>NVDA et JAWS (lecteurs d'écran)</li>
+              <li>
+                Voice Access et Dragon NaturallySpeaking (reconnaissance vocale)
+              </li>
+              <li>ZoomText (agrandissement d'écran)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="conclusion-wrapper">
+          <div class="conclusion">
+            <p>
+              L'accessibilité est un processus d'amélioration continue. Nous
+              travaillons constamment pour rendre notre site plus accessible et
+              nous apprécions vos retours pour nous aider à identifier et
+              résoudre les problèmes éventuels.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      <p>
+        &copy; 2025 - Analyse de Hycreo |
+        <a href="index.html">Accueil</a> |
+        <a href="accessibility.html" aria-current="page">Accessibilité</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
